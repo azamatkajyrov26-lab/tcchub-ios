@@ -40,13 +40,9 @@ struct MainTabView: View {
                 .tabItem { Label(L10n.Tabs.home, systemImage: "house.fill") }
             CoursesListView()
                 .tabItem { Label(L10n.Tabs.courses, systemImage: "book.fill") }
-            EmptyState(image: "empty-messages",
-                       title: L10n.Tabs.messages,
-                       subtitle: L10n.Common.loading)
+            MessagesView()
                 .tabItem { Label(L10n.Tabs.messages, systemImage: "bubble.left.and.bubble.right.fill") }
-            EmptyState(image: "empty-notifications",
-                       title: L10n.Tabs.notifications,
-                       subtitle: L10n.Common.loading)
+            NotificationsView()
                 .tabItem { Label(L10n.Tabs.notifications, systemImage: "bell.fill") }
             ProfileView()
                 .tabItem { Label(L10n.Tabs.profile, systemImage: "person.fill") }
@@ -96,12 +92,8 @@ struct SidebarRoot: View {
             switch selection ?? .home {
             case .home:          DashboardView()
             case .courses:       CoursesListView()
-            case .messages:      EmptyState(image: "empty-messages",
-                                            title: L10n.Tabs.messages,
-                                            subtitle: L10n.Common.loading)
-            case .notifications: EmptyState(image: "empty-notifications",
-                                            title: L10n.Tabs.notifications,
-                                            subtitle: L10n.Common.loading)
+            case .messages:      MessagesView()
+            case .notifications: NotificationsView()
             case .profile:       ProfileView()
             }
         }
