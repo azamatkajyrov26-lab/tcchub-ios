@@ -1,0 +1,35 @@
+{
+  "brand": {
+    "primary":        { "light": "#C6A46D", "dark": "#D4B87E" },
+    "primaryHover":   { "light": "#A38450", "dark": "#E0C68F" },
+    "primaryMuted":   { "light": "#F5EEDF", "dark": "#3A2F1E" },
+    "navy":           { "light": "#1B2A4A", "dark": "#E6ECF5" },
+    "navyLight":      { "light": "#2D4A7A", "dark": "#B8C4D8" }
+  },
+  "surface": {
+    "background":     { "light": "#FAFBFD", "dark": "#0E1320" },
+    "card":           { "light": "#FFFFFF", "dark": "#1A2133" },
+    "elevated":       { "light": "#FFFFFF", "dark": "#242C42" },
+    "alt":            { "light": "#F3F4F8", "dark": "#151B2A" }
+  },
+  "text": {
+    "primary":        { "light": "#1B2A4A", "dark": "#F5F7FB" },
+    "secondary":      { "light": "#3D5070", "dark": "#B8C4D8" },
+    "tertiary":       { "light": "#7A8BA8", "dark": "#7A8BA8" },
+    "onPrimary":      { "light": "#FFFFFF", "dark": "#0E1320" }
+  },
+  "border": {
+    "default":        { "light": "rgba(27,42,74,0.08)",  "dark": "rgba(255,255,255,0.08)" },
+    "strong":         { "light": "rgba(27,42,74,0.16)",  "dark": "rgba(255,255,255,0.16)" }
+  },
+  "semantic": {
+    "success":        { "light": "#2E8B57", "dark": "#4CAF82" },
+    "warning":        { "light": "#E0A020", "dark": "#F2B73A" },
+    "error":          { "light": "#D9534F", "dark": "#FF6B6B" },
+    "info":           { "light": "#4A90E2", "dark": "#6AA8EE" }
+  },
+  "gradient": {
+    "hero": ["#1B2A4A", "#C6A46D"],
+    "card": ["#FFFFFF", "#F3F4F8"]
+  }
+}

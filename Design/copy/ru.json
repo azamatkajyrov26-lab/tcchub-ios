@@ -1,0 +1,101 @@
+{
+  "auth": {
+    "loginTitle": "С возвращением",
+    "loginSubtitle": "Войдите, чтобы продолжить обучение",
+    "email": "Email",
+    "password": "Пароль",
+    "signIn": "Войти",
+    "signUp": "Создать аккаунт",
+    "forgot": "Забыли пароль?",
+    "registerTitle": "Регистрация",
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "confirmPassword": "Подтвердите пароль",
+    "errorInvalid": "Неверный email или пароль",
+    "errorNetwork": "Нет соединения. Попробуйте снова."
+  },
+  "tabs": {
+    "home": "Главная",
+    "courses": "Курсы",
+    "messages": "Сообщения",
+    "profile": "Профиль"
+  },
+  "dashboard": {
+    "greetingMorning": "Доброе утро",
+    "greetingAfternoon": "Добрый день",
+    "greetingEvening": "Добрый вечер",
+    "continueLearning": "Продолжить обучение",
+    "upcoming": "Предстоящее",
+    "stats": "Ваш прогресс",
+    "enrolled": "В процессе",
+    "completed": "Завершено",
+    "certificates": "Сертификаты",
+    "hours": "Часов"
+  },
+  "courses": {
+    "title": "Курсы",
+    "searchPlaceholder": "Поиск курсов",
+    "filterAll": "Все",
+    "filterInProgress": "В процессе",
+    "filterCompleted": "Завершённые",
+    "empty": "Пока нет курсов",
+    "emptyHint": "Откройте каталог, чтобы начать обучение",
+    "browse": "Открыть каталог"
+  },
+  "courseDetail": {
+    "about": "О курсе",
+    "curriculum": "Программа",
+    "instructor": "Преподаватель",
+    "enroll": "Записаться",
+    "continue": "Продолжить",
+    "modules": "Модули",
+    "videos": "Видео",
+    "students": "Студенты",
+    "duration": "Длительность",
+    "lesson": "Урок",
+    "video": "Видео",
+    "quiz": "Тест",
+    "assignment": "Задание"
+  },
+  "activity": {
+    "markComplete": "Отметить выполненным",
+    "completed": "Выполнено",
+    "next": "Далее",
+    "previous": "Назад",
+    "submit": "Отправить",
+    "retry": "Повторить",
+    "score": "Результат",
+    "passed": "Сдано",
+    "failed": "Не сдано",
+    "attempts": "Попытки"
+  },
+  "profile": {
+    "title": "Профиль",
+    "editProfile": "Редактировать профиль",
+    "settings": "Настройки",
+    "language": "Язык",
+    "theme": "Тема",
+    "notifications": "Уведомления",
+    "about": "О приложении",
+    "help": "Помощь и поддержка",
+    "signOut": "Выйти",
+    "deleteAccount": "Удалить аккаунт",
+    "darkMode": "Тёмная тема",
+    "systemDefault": "Как в системе"
+  },
+  "common": {
+    "ok": "ОК",
+    "cancel": "Отмена",
+    "save": "Сохранить",
+    "delete": "Удалить",
+    "retry": "Повторить",
+    "loading": "Загрузка…",
+    "error": "Что-то пошло не так",
+    "offline": "Нет подключения",
+    "search": "Поиск",
+    "seeAll": "Все",
+    "close": "Закрыть",
+    "yes": "Да",
+    "no": "Нет"
+  }
+}

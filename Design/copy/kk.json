@@ -1,0 +1,101 @@
+{
+  "auth": {
+    "loginTitle": "Қайта қош келдіңіз",
+    "loginSubtitle": "Оқуды жалғастыру үшін кіріңіз",
+    "email": "Email",
+    "password": "Құпиясөз",
+    "signIn": "Кіру",
+    "signUp": "Аккаунт құру",
+    "forgot": "Құпиясөзді ұмыттыңыз ба?",
+    "registerTitle": "Тіркелу",
+    "firstName": "Аты",
+    "lastName": "Тегі",
+    "confirmPassword": "Құпиясөзді растау",
+    "errorInvalid": "Email немесе құпиясөз қате",
+    "errorNetwork": "Байланыс жоқ. Қайталап көріңіз."
+  },
+  "tabs": {
+    "home": "Басты",
+    "courses": "Курстар",
+    "messages": "Хабарлар",
+    "profile": "Профиль"
+  },
+  "dashboard": {
+    "greetingMorning": "Қайырлы таң",
+    "greetingAfternoon": "Қайырлы күн",
+    "greetingEvening": "Қайырлы кеш",
+    "continueLearning": "Оқуды жалғастыру",
+    "upcoming": "Келесі",
+    "stats": "Сіздің үлгеріміңіз",
+    "enrolled": "Оқуда",
+    "completed": "Аяқталды",
+    "certificates": "Сертификаттар",
+    "hours": "Сағат"
+  },
+  "courses": {
+    "title": "Курстар",
+    "searchPlaceholder": "Курстарды іздеу",
+    "filterAll": "Барлығы",
+    "filterInProgress": "Оқуда",
+    "filterCompleted": "Аяқталған",
+    "empty": "Әзірге курс жоқ",
+    "emptyHint": "Каталогты ашып, оқуды бастаңыз",
+    "browse": "Каталогты ашу"
+  },
+  "courseDetail": {
+    "about": "Курс туралы",
+    "curriculum": "Бағдарлама",
+    "instructor": "Оқытушы",
+    "enroll": "Тіркелу",
+    "continue": "Жалғастыру",
+    "modules": "Модульдер",
+    "videos": "Бейне",
+    "students": "Студенттер",
+    "duration": "Ұзақтығы",
+    "lesson": "Сабақ",
+    "video": "Бейне",
+    "quiz": "Тест",
+    "assignment": "Тапсырма"
+  },
+  "activity": {
+    "markComplete": "Орындалды деп белгілеу",
+    "completed": "Орындалды",
+    "next": "Келесі",
+    "previous": "Артқа",
+    "submit": "Жіберу",
+    "retry": "Қайталау",
+    "score": "Нәтиже",
+    "passed": "Өтті",
+    "failed": "Өтпеді",
+    "attempts": "Әрекеттер"
+  },
+  "profile": {
+    "title": "Профиль",
+    "editProfile": "Профильді өзгерту",
+    "settings": "Баптаулар",
+    "language": "Тіл",
+    "theme": "Тақырып",
+    "notifications": "Хабарландырулар",
+    "about": "Қолданба туралы",
+    "help": "Көмек және қолдау",
+    "signOut": "Шығу",
+    "deleteAccount": "Аккаунтты жою",
+    "darkMode": "Қараңғы тақырып",
+    "systemDefault": "Жүйе бойынша"
+  },
+  "common": {
+    "ok": "ОК",
+    "cancel": "Болдырмау",
+    "save": "Сақтау",
+    "delete": "Жою",
+    "retry": "Қайталау",
+    "loading": "Жүктелуде…",
+    "error": "Бірдеңе дұрыс болмады",
+    "offline": "Желіге қосылмаған",
+    "search": "Іздеу",
+    "seeAll": "Барлығы",
+    "close": "Жабу",
+    "yes": "Иә",
+    "no": "Жоқ"
+  }
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <circle cx="60" cy="60" r="54" fill="none" stroke="#C6A46D" stroke-width="3"/>
+  <circle cx="60" cy="60" r="46" fill="none" stroke="#C6A46D" stroke-width="1" opacity=".5"/>
+  <text x="60" y="74" text-anchor="middle" font-family="Montserrat" font-size="32" font-weight="900" fill="#1B2A4A">30</text><text x="60" y="90" text-anchor="middle" font-family="Montserrat" font-size="8" font-weight="700" fill="#C6A46D" letter-spacing="1">DAYS</text>
+</svg>

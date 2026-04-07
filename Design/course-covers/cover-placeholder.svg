@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <rect width="1200" height="800" fill="#1B2A4A"/>
+  <g opacity=".06" stroke="#C6A46D" stroke-width="1">
+    <path d="M0 0 L1200 800 M1200 0 L0 800 M600 0 L600 800 M0 400 L1200 400"/>
+  </g>
+  <rect x="80" y="80" width="1040" height="640" fill="none" stroke="#C6A46D" stroke-width="2"/>
+  <rect x="80" y="360" width="120" height="3" fill="#C6A46D"/>
+  <text x="80" y="440" font-family="Montserrat, sans-serif" font-size="96" font-weight="900" fill="#FFFFFF" letter-spacing="-2">TCC HUB</text>
+  <text x="80" y="500" font-family="Montserrat, sans-serif" font-size="32" font-style="italic" font-weight="300" fill="#C6A46D" letter-spacing="6">LOGISTICS · EDUCATION</text>
+</svg>

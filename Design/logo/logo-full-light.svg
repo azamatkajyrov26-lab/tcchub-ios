@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 192" width="720" height="192">
+  <rect x="16" y="16" width="160" height="160" rx="16" fill="none" stroke="#C6A46D" stroke-width="2"/>
+  <path d="M 56 66 L 136 66 L 136 82 L 104 82 L 104 148 L 88 148 L 88 82 L 56 82 Z" fill="#C6A46D"/>
+  <text x="200" y="108" font-family="Montserrat, sans-serif" font-size="64" font-weight="900" fill="#FFFFFF" letter-spacing="-2">TCC</text>
+  <text x="200" y="158" font-family="Montserrat, sans-serif" font-size="34" font-style="italic" font-weight="300" fill="#C6A46D" letter-spacing="4">HUB · LMS</text>
+</svg>

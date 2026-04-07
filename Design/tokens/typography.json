@@ -1,0 +1,21 @@
+{
+  "family": {
+    "primary": "Montserrat",
+    "mono":    "SF Mono"
+  },
+  "weights": {
+    "light": 300, "regular": 400, "medium": 500,
+    "semibold": 600, "bold": 700, "black": 900
+  },
+  "styles": {
+    "displayLarge":  { "size": 34, "weight": "black",    "lineHeight": 40, "letterSpacing": -0.8 },
+    "displayMedium": { "size": 28, "weight": "black",    "lineHeight": 34, "letterSpacing": -0.5 },
+    "title":         { "size": 22, "weight": "bold",     "lineHeight": 28, "letterSpacing": -0.2 },
+    "headline":      { "size": 17, "weight": "semibold", "lineHeight": 22 },
+    "body":          { "size": 15, "weight": "regular",  "lineHeight": 22 },
+    "bodyEmphasis":  { "size": 15, "weight": "medium",   "lineHeight": 22 },
+    "callout":       { "size": 14, "weight": "regular",  "lineHeight": 19 },
+    "caption":       { "size": 12, "weight": "regular",  "lineHeight": 16 },
+    "overline":      { "size": 11, "weight": "bold",     "lineHeight": 14, "letterSpacing": 1.6, "uppercase": true }
+  }
+}

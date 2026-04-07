@@ -1,0 +1,101 @@
+{
+  "auth": {
+    "loginTitle": "Welcome back",
+    "loginSubtitle": "Sign in to continue learning",
+    "email": "Email",
+    "password": "Password",
+    "signIn": "Sign in",
+    "signUp": "Create account",
+    "forgot": "Forgot password?",
+    "registerTitle": "Create your account",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "confirmPassword": "Confirm password",
+    "errorInvalid": "Invalid email or password",
+    "errorNetwork": "No connection. Try again."
+  },
+  "tabs": {
+    "home": "Home",
+    "courses": "Courses",
+    "messages": "Messages",
+    "profile": "Profile"
+  },
+  "dashboard": {
+    "greetingMorning": "Good morning",
+    "greetingAfternoon": "Good afternoon",
+    "greetingEvening": "Good evening",
+    "continueLearning": "Continue learning",
+    "upcoming": "Upcoming",
+    "stats": "Your progress",
+    "enrolled": "Enrolled",
+    "completed": "Completed",
+    "certificates": "Certificates",
+    "hours": "Hours"
+  },
+  "courses": {
+    "title": "Courses",
+    "searchPlaceholder": "Search courses",
+    "filterAll": "All",
+    "filterInProgress": "In progress",
+    "filterCompleted": "Completed",
+    "empty": "No courses yet",
+    "emptyHint": "Browse the catalog to start learning",
+    "browse": "Browse catalog"
+  },
+  "courseDetail": {
+    "about": "About this course",
+    "curriculum": "Curriculum",
+    "instructor": "Instructor",
+    "enroll": "Enroll",
+    "continue": "Continue",
+    "modules": "Modules",
+    "videos": "Videos",
+    "students": "Students",
+    "duration": "Duration",
+    "lesson": "Lesson",
+    "video": "Video",
+    "quiz": "Quiz",
+    "assignment": "Assignment"
+  },
+  "activity": {
+    "markComplete": "Mark as complete",
+    "completed": "Completed",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "retry": "Retry",
+    "score": "Score",
+    "passed": "Passed",
+    "failed": "Not passed",
+    "attempts": "Attempts"
+  },
+  "profile": {
+    "title": "Profile",
+    "editProfile": "Edit profile",
+    "settings": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "notifications": "Notifications",
+    "about": "About",
+    "help": "Help & support",
+    "signOut": "Sign out",
+    "deleteAccount": "Delete account",
+    "darkMode": "Dark mode",
+    "systemDefault": "System default"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "retry": "Try again",
+    "loading": "Loading…",
+    "error": "Something went wrong",
+    "offline": "You're offline",
+    "search": "Search",
+    "seeAll": "See all",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No"
+  }
+}
