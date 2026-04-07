@@ -65,6 +65,43 @@
 "common.error" = "Что-то пошло не так";
 "common.offline" = "Нет подключения";
 
+/* Settings */
+"settings.title" = "Настройки";
+"settings.language" = "Язык";
+"settings.theme" = "Тема";
+"settings.themeSystem" = "Системная";
+"settings.themeLight" = "Светлая";
+"settings.themeDark" = "Тёмная";
+"settings.languageSystem" = "Системный";
+"settings.languageEnglish" = "English";
+"settings.languageRussian" = "Русский";
+"settings.languageKazakh" = "Қазақша";
+"settings.about" = "О приложении";
+"settings.version" = "Версия";
+
+/* Quiz */
+"quiz.start" = "Начать тест";
+"quiz.question" = "Вопрос";
+"quiz.submit" = "Отправить";
+"quiz.next" = "Далее";
+"quiz.results" = "Результаты";
+"quiz.score" = "Результат";
+"quiz.passed" = "Сдано";
+"quiz.failed" = "Попробуйте ещё раз";
+"quiz.tryAgain" = "Повторить";
+"quiz.finish" = "Завершить";
+
+/* Certificate */
+"certificate.title" = "Сертификаты";
+"certificate.empty" = "Сертификатов пока нет";
+"certificate.emptyHint" = "Завершите курс, чтобы получить первый сертификат";
+"certificate.share" = "Поделиться";
+"certificate.download" = "Скачать";
+"certificate.issuedOn" = "Выдан";
+
+/* Courses extra */
+"courses.searchPlaceholder" = "Поиск курсов";
+
 /* Onboarding */
 "onboarding.skip" = "Пропустить";
 "onboarding.next" = "Далее";

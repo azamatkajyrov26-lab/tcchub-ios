@@ -19,7 +19,18 @@ struct ActivityDetailView: View {
                 case .document, .resource:
                     DocumentPlaceholder()
                 case .quiz:
-                    InfoBox(text: "Quiz — take it in Phase 3.")
+                    NavigationLink {
+                        QuizPlayerView()
+                    } label: {
+                        HStack {
+                            Image(systemName: "play.fill")
+                            Text("quiz.start").font(.system(size: 16, weight: .semibold))
+                        }
+                        .frame(maxWidth: .infinity, minHeight: 52)
+                        .background(Theme.Color.primary)
+                        .foregroundStyle(.white)
+                        .clipShape(RoundedRectangle(cornerRadius: Theme.Radius.pill))
+                    }
                 case .assignment:
                     InfoBox(text: "Assignment — submission coming in Phase 3.")
                 default:

@@ -65,6 +65,43 @@
 "common.error" = "Something went wrong";
 "common.offline" = "You're offline";
 
+/* Settings */
+"settings.title" = "Settings";
+"settings.language" = "Language";
+"settings.theme" = "Theme";
+"settings.themeSystem" = "System";
+"settings.themeLight" = "Light";
+"settings.themeDark" = "Dark";
+"settings.languageSystem" = "System";
+"settings.languageEnglish" = "English";
+"settings.languageRussian" = "Русский";
+"settings.languageKazakh" = "Қазақша";
+"settings.about" = "About";
+"settings.version" = "Version";
+
+/* Quiz */
+"quiz.start" = "Start quiz";
+"quiz.question" = "Question";
+"quiz.submit" = "Submit";
+"quiz.next" = "Next";
+"quiz.results" = "Results";
+"quiz.score" = "Score";
+"quiz.passed" = "Passed";
+"quiz.failed" = "Try again";
+"quiz.tryAgain" = "Retry";
+"quiz.finish" = "Finish";
+
+/* Certificate */
+"certificate.title" = "Certificates";
+"certificate.empty" = "No certificates yet";
+"certificate.emptyHint" = "Complete a course to earn your first certificate";
+"certificate.share" = "Share";
+"certificate.download" = "Download";
+"certificate.issuedOn" = "Issued";
+
+/* Courses extra */
+"courses.searchPlaceholder" = "Search courses";
+
 /* Onboarding */
 "onboarding.skip" = "Skip";
 "onboarding.next" = "Next";

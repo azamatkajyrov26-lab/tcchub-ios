@@ -65,6 +65,43 @@
 "common.error" = "Бірдеңе дұрыс болмады";
 "common.offline" = "Желіге қосылмаған";
 
+/* Settings */
+"settings.title" = "Баптаулар";
+"settings.language" = "Тіл";
+"settings.theme" = "Тақырып";
+"settings.themeSystem" = "Жүйелік";
+"settings.themeLight" = "Ашық";
+"settings.themeDark" = "Қараңғы";
+"settings.languageSystem" = "Жүйелік";
+"settings.languageEnglish" = "English";
+"settings.languageRussian" = "Русский";
+"settings.languageKazakh" = "Қазақша";
+"settings.about" = "Қолданба туралы";
+"settings.version" = "Нұсқасы";
+
+/* Quiz */
+"quiz.start" = "Тестті бастау";
+"quiz.question" = "Сұрақ";
+"quiz.submit" = "Жіберу";
+"quiz.next" = "Келесі";
+"quiz.results" = "Нәтижелер";
+"quiz.score" = "Ұпай";
+"quiz.passed" = "Өтті";
+"quiz.failed" = "Қайталап көріңіз";
+"quiz.tryAgain" = "Қайталау";
+"quiz.finish" = "Аяқтау";
+
+/* Certificate */
+"certificate.title" = "Сертификаттар";
+"certificate.empty" = "Әзірге сертификат жоқ";
+"certificate.emptyHint" = "Алғашқы сертификатты алу үшін курсты аяқтаңыз";
+"certificate.share" = "Бөлісу";
+"certificate.download" = "Жүктеу";
+"certificate.issuedOn" = "Берілген";
+
+/* Courses extra */
+"courses.searchPlaceholder" = "Курстарды іздеу";
+
 /* Onboarding */
 "onboarding.skip" = "Өткізіп жіберу";
 "onboarding.next" = "Келесі";

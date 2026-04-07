@@ -27,6 +27,12 @@ final class CoursesListViewModel: ObservableObject {
 
 struct CoursesListView: View {
     @StateObject private var vm = CoursesListViewModel()
+    @State private var query = ""
+
+    private var filtered: [Course] {
+        guard !query.isEmpty else { return vm.courses }
+        return vm.courses.filter { $0.title.localizedCaseInsensitiveContains(query) }
+    }
 
     var body: some View {
         NavigationStack {
@@ -47,7 +53,7 @@ struct CoursesListView: View {
                 } else {
                     ScrollView {
                         LazyVStack(spacing: Theme.Spacing.m) {
-                            ForEach(vm.courses) { course in
+                            ForEach(filtered) { course in
                                 NavigationLink(value: course) {
                                     CourseRow(course: course)
                                 }
@@ -62,6 +68,7 @@ struct CoursesListView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Theme.Color.surface)
             .navigationTitle(L10n.Courses.title)
+            .searchable(text: $query, prompt: Text("courses.searchPlaceholder"))
             .navigationDestination(for: Course.self) { CourseDetailView(slug: $0.slug, title: $0.title) }
             .task { if vm.courses.isEmpty { await vm.load() } }
         }

@@ -79,12 +79,19 @@ struct ProfileView: View {
 
     private var menuSection: some View {
         VStack(spacing: 0) {
-            ProfileMenuRow(icon: "chart.bar.fill",  title: L10n.Profile.grades)
+            NavigationLink { CertificateGalleryView() } label: {
+                ProfileMenuRow(icon: "rosette", title: L10n.Profile.certificates)
+            }
             Divider().padding(.leading, 56)
-            ProfileMenuRow(icon: "rosette",         title: L10n.Profile.certificates)
+            ProfileMenuRow(icon: "chart.bar.fill", title: L10n.Profile.grades)
             Divider().padding(.leading, 56)
-            ProfileMenuRow(icon: "calendar",        title: L10n.Profile.calendar)
+            ProfileMenuRow(icon: "calendar",       title: L10n.Profile.calendar)
+            Divider().padding(.leading, 56)
+            NavigationLink { SettingsView() } label: {
+                ProfileMenuRow(icon: "gearshape.fill", title: "settings.title")
+            }
         }
+        .buttonStyle(.plain)
         .background(
             RoundedRectangle(cornerRadius: Theme.Radius.card)
                 .fill(Theme.Color.card)
@@ -109,7 +116,7 @@ struct ProfileView: View {
     }
 }
 
-private struct ProfileMenuRow: View {
+struct ProfileMenuRow: View {
     let icon: String
     let title: LocalizedStringKey
 

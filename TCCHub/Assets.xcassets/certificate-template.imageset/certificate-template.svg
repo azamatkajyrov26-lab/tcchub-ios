@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1131" width="1600" height="1131">
+  <rect width="1600" height="1131" fill="#FAF8F3"/>
+  <rect x="40" y="40" width="1520" height="1051" fill="none" stroke="#C6A46D" stroke-width="3"/>
+  <rect x="60" y="60" width="1480" height="1011" fill="none" stroke="#C6A46D" stroke-width="1"/>
+  <g opacity=".04" stroke="#1B2A4A">
+    <path d="M0 0 L1600 1131 M1600 0 L0 1131"/>
+  </g>
+  <text x="800" y="180" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="18" font-weight="700" fill="#C6A46D" letter-spacing="8">TCC HUB · LMS</text>
+  <rect x="740" y="210" width="120" height="2" fill="#C6A46D"/>
+  <text x="800" y="310" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="72" font-weight="900" fill="#1B2A4A" letter-spacing="-2">CERTIFICATE</text>
+  <text x="800" y="370" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="28" font-style="italic" font-weight="300" fill="#C6A46D" letter-spacing="4">of completion</text>
+  <text x="800" y="470" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="16" font-weight="500" fill="#1B2A4A" letter-spacing="4" opacity=".6">AWARDED TO</text>
+  <text x="800" y="550" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="56" font-weight="700" fill="#1B2A4A">{{STUDENT_NAME}}</text>
+  <rect x="600" y="580" width="400" height="1" fill="#C6A46D"/>
+  <text x="800" y="640" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="16" font-weight="500" fill="#1B2A4A" letter-spacing="4" opacity=".6">FOR SUCCESSFULLY COMPLETING</text>
+  <text x="800" y="710" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="36" font-weight="600" font-style="italic" fill="#C6A46D">{{COURSE_TITLE}}</text>
+  <g transform="translate(800 850)">
+    <circle r="70" fill="none" stroke="#C6A46D" stroke-width="2"/>
+    <circle r="56" fill="none" stroke="#C6A46D" stroke-width="1"/>
+    <text y="-8" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="12" font-weight="700" fill="#1B2A4A" letter-spacing="2">TCC HUB</text>
+    <text y="12" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="10" font-weight="500" fill="#C6A46D" letter-spacing="1">VERIFIED</text>
+    <text y="30" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="9" font-weight="500" fill="#1B2A4A" opacity=".6">{{CERT_ID}}</text>
+  </g>
+  <g transform="translate(300 970)">
+    <rect width="240" height="1" fill="#1B2A4A" opacity=".3"/>
+    <text y="26" font-family="Montserrat, sans-serif" font-size="13" font-weight="500" fill="#1B2A4A">{{ISSUE_DATE}}</text>
+    <text y="44" font-family="Montserrat, sans-serif" font-size="10" font-weight="500" fill="#1B2A4A" letter-spacing="2" opacity=".5">DATE ISSUED</text>
+  </g>
+  <g transform="translate(1060 970)">
+    <rect width="240" height="1" fill="#1B2A4A" opacity=".3"/>
+    <text y="26" font-family="Montserrat, sans-serif" font-size="13" font-weight="500" fill="#1B2A4A">{{INSTRUCTOR_NAME}}</text>
+    <text y="44" font-family="Montserrat, sans-serif" font-size="10" font-weight="500" fill="#1B2A4A" letter-spacing="2" opacity=".5">INSTRUCTOR</text>
+  </g>
+</svg>
