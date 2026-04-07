@@ -33,7 +33,7 @@ Full light/dark tokens: `tokens/colors.json`.
 Design/
 ├── README.md                    ← this file
 ├── tokens/                      ← colors, typography, spacing, radius JSON
-├── logo/                        ← SVG + rasterized PNG @1x/@2x/@3x
+├── logo/                        ← real-logo-source.png + PNG @1x/@2x/@3x (source of truth)
 ├── app-icon/                    ← 1024×1024 master + iPad variant
 ├── launch/                      ← launch logo + spec
 ├── illustrations/               ← onboarding, empty states, errors
@@ -42,6 +42,10 @@ Design/
 ├── certificate-template/        ← PDF template SVG + spec
 └── copy/                        ← en/ru/kk JSON strings
 ```
+
+## Logo source
+
+The **real TCC HUB logo** lives at `logo/real-logo-source.png` (154×154 RGBA PNG, taken directly from the production LMS static files). All derived assets — `logo/png/logo-mark@1x/2x/3x.png`, `app-icon/AppIcon-1024.png`, `launch/launch-logo.png` — are rendered from this single source via Pillow LANCZOS resampling. Do **not** regenerate from an SVG; always re-rasterize from the PNG source when higher-resolution assets are needed.
 
 ## Usage in Xcode
 
