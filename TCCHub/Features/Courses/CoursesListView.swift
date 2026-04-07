@@ -38,7 +38,7 @@ struct CoursesListView: View {
         NavigationStack {
             Group {
                 if vm.isLoading && vm.courses.isEmpty {
-                    ProgressView().tint(Theme.Color.primary)
+                    ScrollView { CourseSkeletonList() }
                 } else if vm.errorMessage != nil, vm.courses.isEmpty {
                     EmptyState(image: "error-offline",
                                title: L10n.Common.offline,

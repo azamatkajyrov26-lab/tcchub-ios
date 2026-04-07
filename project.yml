@@ -1,4 +1,14 @@
 name: TCCHub
+packages:
+  Pow:
+    url: https://github.com/EmergeTools/Pow
+    from: 1.0.0
+  SwiftUI-Shimmer:
+    url: https://github.com/markiv/SwiftUI-Shimmer
+    from: 1.5.0
+  Kingfisher:
+    url: https://github.com/onevcat/Kingfisher
+    from: 7.11.0
 options:
   bundleIdPrefix: kz.tcchub
   deploymentTarget:
@@ -20,6 +30,11 @@ targets:
       - path: TCCHub
     excludes:
       - "Design/**"
+    dependencies:
+      - package: Pow
+      - package: SwiftUI-Shimmer
+        product: Shimmer
+      - package: Kingfisher
     info:
       path: TCCHub/Info.plist
       properties:

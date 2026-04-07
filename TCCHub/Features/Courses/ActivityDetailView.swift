@@ -1,5 +1,6 @@
 import SwiftUI
 import AVKit
+import Pow
 
 struct ActivityDetailView: View {
     let activity: Activity
@@ -42,12 +43,21 @@ struct ActivityDetailView: View {
                 }
 
                 PrimaryButton(
-                    title: marked ? "Completed" : "Mark as complete",
+                    title: marked
+                        ? String(localized: "activity.completed")
+                        : String(localized: "activity.markComplete"),
                     isLoading: isMarking
                 ) {
                     Task { await markComplete() }
                 }
                 .disabled(marked)
+                .changeEffect(
+                    .spray(origin: UnitPoint(x: 0.5, y: 0.5)) {
+                        Image(systemName: "checkmark.circle.fill")
+                            .foregroundStyle(Theme.Color.success)
+                    },
+                    value: marked
+                )
             }
             .padding(Theme.Spacing.l)
         }

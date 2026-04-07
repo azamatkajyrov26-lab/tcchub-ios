@@ -1,4 +1,5 @@
 import SwiftUI
+import Pow
 
 struct DemoQuestion: Identifiable {
     let id = UUID()
@@ -100,11 +101,26 @@ struct QuizPlayerView: View {
 
     private var passed: Bool { Double(correctCount) / Double(demoQuestions.count) >= 0.6 }
 
+    @State private var celebrationTrigger = 0
+
     private var results: some View {
         VStack(spacing: Theme.Spacing.l) {
             Spacer()
             Image(passed ? "success-certificate" : "error-404")
                 .resizable().scaledToFit().frame(maxHeight: 220)
+                .changeEffect(
+                    .spray(origin: UnitPoint(x: 0.5, y: 0.3)) {
+                        Group {
+                            Image(systemName: "star.fill").foregroundStyle(Theme.Color.primary)
+                            Image(systemName: "sparkle").foregroundStyle(Theme.Color.warning)
+                            Image(systemName: "rosette").foregroundStyle(Theme.Color.success)
+                        }
+                    },
+                    value: celebrationTrigger
+                )
+                .onAppear {
+                    if passed { celebrationTrigger += 1 }
+                }
             Text(passed ? "quiz.passed" : "quiz.failed")
                 .font(.system(size: 24, weight: .bold))
                 .foregroundStyle(passed ? Theme.Color.success : Theme.Color.error)
