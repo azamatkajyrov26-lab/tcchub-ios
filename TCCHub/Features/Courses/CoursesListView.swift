@@ -1,0 +1,111 @@
+import SwiftUI
+
+@MainActor
+final class CoursesListViewModel: ObservableObject {
+    @Published var courses: [Course] = []
+    @Published var isLoading = false
+    @Published var errorMessage: String?
+
+    func load() async {
+        isLoading = true; errorMessage = nil
+        defer { isLoading = false }
+        do {
+            // API may return either a paginated envelope or a raw array.
+            let data = try await APIClient.shared.sendRaw(.courses)
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            if let page = try? decoder.decode(Paginated<Course>.self, from: data) {
+                self.courses = page.results
+            } else {
+                self.courses = (try? decoder.decode([Course].self, from: data)) ?? []
+            }
+        } catch {
+            errorMessage = "Couldn't load courses"
+        }
+    }
+}
+
+struct CoursesListView: View {
+    @StateObject private var vm = CoursesListViewModel()
+
+    var body: some View {
+        NavigationStack {
+            Group {
+                if vm.isLoading && vm.courses.isEmpty {
+                    ProgressView().tint(Theme.Color.primary)
+                } else if let err = vm.errorMessage, vm.courses.isEmpty {
+                    VStack(spacing: 12) {
+                        Image(systemName: "wifi.exclamationmark")
+                            .font(.system(size: 40))
+                            .foregroundStyle(Theme.Color.textLight)
+                        Text(err).foregroundStyle(Theme.Color.textMid)
+                        Button("Retry") { Task { await vm.load() } }
+                            .foregroundStyle(Theme.Color.primary)
+                    }
+                } else if vm.courses.isEmpty {
+                    Text("No courses yet")
+                        .foregroundStyle(Theme.Color.textMid)
+                } else {
+                    ScrollView {
+                        LazyVStack(spacing: Theme.Spacing.m) {
+                            ForEach(vm.courses) { course in
+                                NavigationLink(value: course) {
+                                    CourseRow(course: course)
+                                }
+                                .buttonStyle(.plain)
+                            }
+                        }
+                        .padding(Theme.Spacing.m)
+                    }
+                    .refreshable { await vm.load() }
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Theme.Color.surface)
+            .navigationTitle("Courses")
+            .navigationDestination(for: Course.self) { CourseDetailView(slug: $0.slug, title: $0.title) }
+            .task { if vm.courses.isEmpty { await vm.load() } }
+        }
+    }
+}
+
+struct CourseRow: View {
+    let course: Course
+
+    var body: some View {
+        HStack(alignment: .top, spacing: Theme.Spacing.m) {
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Theme.Color.primary.opacity(0.15))
+                .frame(width: 72, height: 72)
+                .overlay(
+                    Image(systemName: "book.closed.fill")
+                        .font(.system(size: 26))
+                        .foregroundStyle(Theme.Color.primary)
+                )
+            VStack(alignment: .leading, spacing: 4) {
+                Text(course.title)
+                    .font(.system(size: 16, weight: .semibold))
+                    .foregroundStyle(Theme.Color.navy)
+                    .lineLimit(2)
+                if let summary = course.summary, !summary.isEmpty {
+                    Text(summary)
+                        .font(.system(size: 13))
+                        .foregroundStyle(Theme.Color.textMid)
+                        .lineLimit(2)
+                }
+                if let p = course.progressPercent {
+                    ProgressView(value: min(max(p, 0), 100), total: 100)
+                        .tint(Theme.Color.primary)
+                        .padding(.top, 4)
+                }
+            }
+            Spacer(minLength: 0)
+        }
+        .padding(Theme.Spacing.m)
+        .background(
+            RoundedRectangle(cornerRadius: Theme.Radius.card)
+                .fill(Color.white)
+                .shadow(color: Theme.Color.navy.opacity(0.05), radius: 6, y: 2)
+        )
+    }
+}
