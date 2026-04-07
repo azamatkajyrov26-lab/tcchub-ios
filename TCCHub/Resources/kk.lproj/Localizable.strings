@@ -1,0 +1,77 @@
+/* Auth */
+"auth.loginTitle" = "Қайта қош келдіңіз";
+"auth.loginSubtitle" = "Оқуды жалғастыру үшін кіріңіз";
+"auth.email" = "Email";
+"auth.password" = "Құпиясөз";
+"auth.signIn" = "Кіру";
+"auth.signUp" = "Аккаунт құру";
+"auth.forgot" = "Құпиясөзді ұмыттыңыз ба?";
+"auth.registerTitle" = "Тіркелу";
+"auth.firstName" = "Аты";
+"auth.lastName" = "Тегі";
+"auth.confirmPassword" = "Құпиясөзді растау";
+"auth.errorInvalid" = "Email немесе құпиясөз қате";
+"auth.errorNetwork" = "Байланыс жоқ. Қайталап көріңіз.";
+"auth.noAccount" = "Алғаш реттісіз бе?";
+
+/* Tabs */
+"tabs.home" = "Басты";
+"tabs.courses" = "Курстар";
+"tabs.messages" = "Хабарлар";
+"tabs.notifications" = "Хабарландырулар";
+"tabs.profile" = "Профиль";
+
+/* Dashboard */
+"dashboard.greetingMorning" = "Қайырлы таң";
+"dashboard.greetingAfternoon" = "Қайырлы күн";
+"dashboard.greetingEvening" = "Қайырлы кеш";
+"dashboard.continueLearning" = "Оқуды жалғастыру";
+"dashboard.continueLearningSubtitle" = "Тоқтаған жеріңізден жалғастырыңыз";
+"dashboard.upcoming" = "Келесі";
+"dashboard.upcomingSubtitle" = "Мерзімдер жоқ";
+"dashboard.stats" = "Сіздің үлгеріміңіз";
+"dashboard.statsSubtitle" = "Сертификаттар мен белгілер";
+
+/* Courses */
+"courses.title" = "Курстар";
+"courses.searchPlaceholder" = "Курстарды іздеу";
+"courses.empty" = "Әзірге курс жоқ";
+"courses.emptyHint" = "Каталогты ашып, оқуды бастаңыз";
+"courses.browse" = "Каталогты ашу";
+"courses.loadError" = "Курстарды жүктеу мүмкін болмады";
+
+/* Course detail */
+"courseDetail.enroll" = "Тіркелу";
+"courseDetail.curriculum" = "Бағдарлама";
+
+/* Activity */
+"activity.markComplete" = "Орындалды деп белгілеу";
+"activity.completed" = "Орындалды";
+"activity.quizPlaceholder" = "Тест — жақында.";
+"activity.assignmentPlaceholder" = "Тапсырма — жақында.";
+"activity.lessonPlaceholder" = "Сабақ мазмұны осында көрсетіледі.";
+
+/* Profile */
+"profile.title" = "Профиль";
+"profile.grades" = "Бағалар";
+"profile.certificates" = "Сертификаттар";
+"profile.badges" = "Белгілер";
+"profile.calendar" = "Күнтізбе";
+"profile.signOut" = "Шығу";
+
+/* Common */
+"common.retry" = "Қайталау";
+"common.loading" = "Жүктелуде…";
+"common.error" = "Бірдеңе дұрыс болмады";
+"common.offline" = "Желіге қосылмаған";
+
+/* Onboarding */
+"onboarding.skip" = "Өткізіп жіберу";
+"onboarding.next" = "Келесі";
+"onboarding.getStarted" = "Бастау";
+"onboarding.title1" = "Кез келген жерде оқыңыз";
+"onboarding.body1" = "Жолдағы мамандарға арналған логистика курстары.";
+"onboarding.title2" = "Үлгеріміңізді қадағалаңыз";
+"onboarding.body2" = "Тесттер, белгілер және айқын кезеңдер.";
+"onboarding.title3" = "Сертификаттар алыңыз";
+"onboarding.body3" = "TransCaspian Cargo расталған құжаттары.";

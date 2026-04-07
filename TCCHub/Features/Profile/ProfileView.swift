@@ -29,21 +29,21 @@ struct ProfileView: View {
                 }
 
                 Section {
-                    Label("Grades", systemImage: "chart.bar.fill")
-                    Label("Certificates", systemImage: "rosette")
-                    Label("Badges", systemImage: "star.fill")
-                    Label("Calendar", systemImage: "calendar")
+                    Label(L10n.Profile.grades,       systemImage: "chart.bar.fill")
+                    Label(L10n.Profile.certificates, systemImage: "rosette")
+                    Label(L10n.Profile.badges,       systemImage: "star.fill")
+                    Label(L10n.Profile.calendar,     systemImage: "calendar")
                 }
 
                 Section {
                     Button(role: .destructive) {
                         auth.logout()
                     } label: {
-                        Label("Log out", systemImage: "rectangle.portrait.and.arrow.right")
+                        Label(L10n.Profile.signOut, systemImage: "rectangle.portrait.and.arrow.right")
                     }
                 }
             }
-            .navigationTitle("Profile")
+            .navigationTitle(L10n.Profile.title)
         }
     }
 }

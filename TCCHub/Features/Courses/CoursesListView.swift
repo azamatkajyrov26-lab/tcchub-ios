@@ -33,18 +33,17 @@ struct CoursesListView: View {
             Group {
                 if vm.isLoading && vm.courses.isEmpty {
                     ProgressView().tint(Theme.Color.primary)
-                } else if let err = vm.errorMessage, vm.courses.isEmpty {
-                    VStack(spacing: 12) {
-                        Image(systemName: "wifi.exclamationmark")
-                            .font(.system(size: 40))
-                            .foregroundStyle(Theme.Color.textLight)
-                        Text(err).foregroundStyle(Theme.Color.textMid)
-                        Button("Retry") { Task { await vm.load() } }
-                            .foregroundStyle(Theme.Color.primary)
+                } else if vm.errorMessage != nil, vm.courses.isEmpty {
+                    EmptyState(image: "error-offline",
+                               title: L10n.Common.offline,
+                               subtitle: L10n.Courses.loadError,
+                               actionTitle: String(localized: "common.retry")) {
+                        Task { await vm.load() }
                     }
                 } else if vm.courses.isEmpty {
-                    Text("No courses yet")
-                        .foregroundStyle(Theme.Color.textMid)
+                    EmptyState(image: "empty-courses",
+                               title: L10n.Courses.empty,
+                               subtitle: L10n.Courses.emptyHint)
                 } else {
                     ScrollView {
                         LazyVStack(spacing: Theme.Spacing.m) {
@@ -62,7 +61,7 @@ struct CoursesListView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Theme.Color.surface)
-            .navigationTitle("Courses")
+            .navigationTitle(L10n.Courses.title)
             .navigationDestination(for: Course.self) { CourseDetailView(slug: $0.slug, title: $0.title) }
             .task { if vm.courses.isEmpty { await vm.load() } }
         }

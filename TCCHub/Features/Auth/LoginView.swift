@@ -7,7 +7,7 @@ struct LoginView: View {
 
     var body: some View {
         ZStack {
-            Theme.Color.surface.ignoresSafeArea()
+            Theme.Color.background.ignoresSafeArea()
             ScrollView {
                 VStack(spacing: Theme.Spacing.l) {
                     Spacer(minLength: 40)
@@ -16,24 +16,24 @@ struct LoginView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(height: 64)
-                        Text("Welcome back")
-                            .font(.system(size: 24, weight: .bold))
+                        Text(L10n.Auth.loginTitle)
+                            .font(.system(size: 26, weight: .bold))
                             .foregroundStyle(Theme.Color.navy)
-                        Text("Sign in to continue learning")
+                        Text(L10n.Auth.loginSubtitle)
                             .font(.system(size: 15))
                             .foregroundStyle(Theme.Color.textMid)
                     }
                     .padding(.bottom, 16)
 
                     VStack(spacing: 14) {
-                        TextField("Email", text: $email)
+                        TextField(String(localized: "auth.email"), text: $email)
                             .textContentType(.emailAddress)
                             .keyboardType(.emailAddress)
                             .textInputAutocapitalization(.never)
                             .autocorrectionDisabled()
                             .roundedField()
 
-                        SecureField("Password", text: $password)
+                        SecureField(String(localized: "auth.password"), text: $password)
                             .textContentType(.password)
                             .roundedField()
                     }
@@ -41,20 +41,21 @@ struct LoginView: View {
                     if let err = auth.errorMessage {
                         Text(err)
                             .font(.footnote)
-                            .foregroundStyle(.red)
+                            .foregroundStyle(Theme.Color.error)
                     }
 
-                    PrimaryButton(title: "Sign In", isLoading: auth.isLoading) {
+                    PrimaryButton(title: String(localized: "auth.signIn"),
+                                  isLoading: auth.isLoading) {
                         Task { await auth.login(email: email, password: password) }
                     }
 
-                    NavigationLink("Forgot password?") { PasswordResetView() }
+                    NavigationLink(L10n.Auth.forgot) { PasswordResetView() }
                         .font(.footnote)
                         .foregroundStyle(Theme.Color.navyLight)
 
                     HStack(spacing: 4) {
-                        Text("New here?").foregroundStyle(Theme.Color.textMid)
-                        NavigationLink("Create account") { SignUpView() }
+                        Text(L10n.Auth.noAccount).foregroundStyle(Theme.Color.textMid)
+                        NavigationLink(L10n.Auth.signUp) { SignUpView() }
                             .foregroundStyle(Theme.Color.primary)
                     }
                     .font(.footnote)

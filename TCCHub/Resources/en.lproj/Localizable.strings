@@ -1,0 +1,77 @@
+/* Auth */
+"auth.loginTitle" = "Welcome back";
+"auth.loginSubtitle" = "Sign in to continue learning";
+"auth.email" = "Email";
+"auth.password" = "Password";
+"auth.signIn" = "Sign in";
+"auth.signUp" = "Create account";
+"auth.forgot" = "Forgot password?";
+"auth.registerTitle" = "Create your account";
+"auth.firstName" = "First name";
+"auth.lastName" = "Last name";
+"auth.confirmPassword" = "Confirm password";
+"auth.errorInvalid" = "Invalid email or password";
+"auth.errorNetwork" = "No connection. Try again.";
+"auth.noAccount" = "New here?";
+
+/* Tabs */
+"tabs.home" = "Home";
+"tabs.courses" = "Courses";
+"tabs.messages" = "Messages";
+"tabs.notifications" = "Alerts";
+"tabs.profile" = "Profile";
+
+/* Dashboard */
+"dashboard.greetingMorning" = "Good morning";
+"dashboard.greetingAfternoon" = "Good afternoon";
+"dashboard.greetingEvening" = "Good evening";
+"dashboard.continueLearning" = "Continue learning";
+"dashboard.continueLearningSubtitle" = "Pick up where you left off";
+"dashboard.upcoming" = "Upcoming";
+"dashboard.upcomingSubtitle" = "No items due";
+"dashboard.stats" = "Your progress";
+"dashboard.statsSubtitle" = "Track certificates & badges";
+
+/* Courses */
+"courses.title" = "Courses";
+"courses.searchPlaceholder" = "Search courses";
+"courses.empty" = "No courses yet";
+"courses.emptyHint" = "Browse the catalog to start learning";
+"courses.browse" = "Browse catalog";
+"courses.loadError" = "Couldn't load courses";
+
+/* Course detail */
+"courseDetail.enroll" = "Enroll";
+"courseDetail.curriculum" = "Curriculum";
+
+/* Activity */
+"activity.markComplete" = "Mark as complete";
+"activity.completed" = "Completed";
+"activity.quizPlaceholder" = "Quiz — coming soon.";
+"activity.assignmentPlaceholder" = "Assignment — coming soon.";
+"activity.lessonPlaceholder" = "Lesson content renders here.";
+
+/* Profile */
+"profile.title" = "Profile";
+"profile.grades" = "Grades";
+"profile.certificates" = "Certificates";
+"profile.badges" = "Badges";
+"profile.calendar" = "Calendar";
+"profile.signOut" = "Sign out";
+
+/* Common */
+"common.retry" = "Try again";
+"common.loading" = "Loading…";
+"common.error" = "Something went wrong";
+"common.offline" = "You're offline";
+
+/* Onboarding */
+"onboarding.skip" = "Skip";
+"onboarding.next" = "Next";
+"onboarding.getStarted" = "Get started";
+"onboarding.title1" = "Learn anywhere";
+"onboarding.body1" = "Logistics courses crafted for professionals on the move.";
+"onboarding.title2" = "Track your progress";
+"onboarding.body2" = "Keep momentum with quizzes, badges, and clear milestones.";
+"onboarding.title3" = "Earn certificates";
+"onboarding.body3" = "Showcase verified credentials from TransCaspian Cargo.";

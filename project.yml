@@ -32,6 +32,11 @@ targets:
           - UIInterfaceOrientationPortrait
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
+        CFBundleLocalizations:
+          - en
+          - ru
+          - kk
+        CFBundleDevelopmentRegion: en
         NSAppTransportSecurity:
           NSAllowsLocalNetworking: true
           NSExceptionDomains:

@@ -1,0 +1,77 @@
+/* Auth */
+"auth.loginTitle" = "С возвращением";
+"auth.loginSubtitle" = "Войдите, чтобы продолжить обучение";
+"auth.email" = "Email";
+"auth.password" = "Пароль";
+"auth.signIn" = "Войти";
+"auth.signUp" = "Создать аккаунт";
+"auth.forgot" = "Забыли пароль?";
+"auth.registerTitle" = "Регистрация";
+"auth.firstName" = "Имя";
+"auth.lastName" = "Фамилия";
+"auth.confirmPassword" = "Подтвердите пароль";
+"auth.errorInvalid" = "Неверный email или пароль";
+"auth.errorNetwork" = "Нет соединения. Попробуйте снова.";
+"auth.noAccount" = "Впервые здесь?";
+
+/* Tabs */
+"tabs.home" = "Главная";
+"tabs.courses" = "Курсы";
+"tabs.messages" = "Сообщения";
+"tabs.notifications" = "Уведомления";
+"tabs.profile" = "Профиль";
+
+/* Dashboard */
+"dashboard.greetingMorning" = "Доброе утро";
+"dashboard.greetingAfternoon" = "Добрый день";
+"dashboard.greetingEvening" = "Добрый вечер";
+"dashboard.continueLearning" = "Продолжить обучение";
+"dashboard.continueLearningSubtitle" = "Вернуться к учёбе";
+"dashboard.upcoming" = "Предстоящее";
+"dashboard.upcomingSubtitle" = "Сроков нет";
+"dashboard.stats" = "Ваш прогресс";
+"dashboard.statsSubtitle" = "Сертификаты и достижения";
+
+/* Courses */
+"courses.title" = "Курсы";
+"courses.searchPlaceholder" = "Поиск курсов";
+"courses.empty" = "Пока нет курсов";
+"courses.emptyHint" = "Откройте каталог, чтобы начать обучение";
+"courses.browse" = "Открыть каталог";
+"courses.loadError" = "Не удалось загрузить курсы";
+
+/* Course detail */
+"courseDetail.enroll" = "Записаться";
+"courseDetail.curriculum" = "Программа";
+
+/* Activity */
+"activity.markComplete" = "Отметить выполненным";
+"activity.completed" = "Выполнено";
+"activity.quizPlaceholder" = "Тест — скоро будет.";
+"activity.assignmentPlaceholder" = "Задание — скоро будет.";
+"activity.lessonPlaceholder" = "Содержимое урока появится здесь.";
+
+/* Profile */
+"profile.title" = "Профиль";
+"profile.grades" = "Оценки";
+"profile.certificates" = "Сертификаты";
+"profile.badges" = "Достижения";
+"profile.calendar" = "Календарь";
+"profile.signOut" = "Выйти";
+
+/* Common */
+"common.retry" = "Повторить";
+"common.loading" = "Загрузка…";
+"common.error" = "Что-то пошло не так";
+"common.offline" = "Нет подключения";
+
+/* Onboarding */
+"onboarding.skip" = "Пропустить";
+"onboarding.next" = "Далее";
+"onboarding.getStarted" = "Начать";
+"onboarding.title1" = "Учитесь где угодно";
+"onboarding.body1" = "Курсы по логистике для специалистов в дороге.";
+"onboarding.title2" = "Отслеживайте прогресс";
+"onboarding.body2" = "Тесты, награды и понятные этапы держат вас в тонусе.";
+"onboarding.title3" = "Получайте сертификаты";
+"onboarding.body3" = "Подтверждённые документы от TransCaspian Cargo.";
