@@ -11,9 +11,13 @@ struct LoginView: View {
             ScrollView {
                 VStack(spacing: Theme.Spacing.l) {
                     Spacer(minLength: 40)
-                    VStack(spacing: 8) {
-                        Text("TCC Hub")
-                            .font(.system(size: 32, weight: .bold))
+                    VStack(spacing: 12) {
+                        Image("LogoFull")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 64)
+                        Text("Welcome back")
+                            .font(.system(size: 24, weight: .bold))
                             .foregroundStyle(Theme.Color.navy)
                         Text("Sign in to continue learning")
                             .font(.system(size: 15))

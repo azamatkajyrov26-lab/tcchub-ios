@@ -44,6 +44,10 @@
 	<dict>
 		<key>UIColorName</key>
 		<string></string>
+		<key>UIImageName</key>
+		<string>LogoFull</string>
+		<key>UIImageRespectsSafeAreaInsets</key>
+		<true/>
 	</dict>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>

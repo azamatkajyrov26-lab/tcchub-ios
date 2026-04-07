@@ -18,12 +18,16 @@ targets:
     platform: iOS
     sources:
       - path: TCCHub
+    excludes:
+      - "Design/**"
     info:
       path: TCCHub/Info.plist
       properties:
         CFBundleDisplayName: TCC Hub
         UILaunchScreen:
           UIColorName: ""
+          UIImageName: "LogoFull"
+          UIImageRespectsSafeAreaInsets: true
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
         UIApplicationSceneManifest:
